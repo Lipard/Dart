@@ -8,8 +8,6 @@ main() {
   int? e =null; // ? --> Permite introducir un null
 
 
-  print(a);
-
   // ======= String
   var nombre = 'Alejandro';
   String apellido = 'Gimeno';
@@ -22,7 +20,11 @@ main() {
   ''';
 
 
+  // ======= Booleans
+  var isActive; // var por defecto coge cualquiera y no a error con null o valores no asignados sin el uso de la "?"
+  bool isNotActive = true;
 
-  print( nombre );
+
+  print( nombre! ); // admiración al final sirve para decir que confie en nosotros y que no le va a llega nulo
 
 }
